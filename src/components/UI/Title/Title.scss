@@ -1,0 +1,17 @@
+@import "../../../scss/variables";
+
+$desktop: 840px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+.title {
+  text-align: center;
+  h1 {
+    color: color(primary);
+    font-size: 30px;
+  }
+}

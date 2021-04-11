@@ -1,0 +1,107 @@
+@import '../../scss/variables';
+
+$desktop: 840px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@import '../../fontawesome/web-fonts-with-css/scss/_variables.scss';
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  .slider-container {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    top: 0;
+    .slider-content {
+      color: white;
+      position: absolute;
+      top: 60px;
+      left: 25%;
+      text-align: left;
+      width: 250px;
+      @include desktop {
+        color: white;
+        position: absolute;
+        top: 100px;
+        left: 25%;
+        text-align: left;
+        width: 200px;
+      }
+      h1 {
+        font-size: 35px;
+        @include desktop {
+          font-size: 60px;
+        }
+      }
+      p {
+        color: #ccc;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 1.7;
+        margin: 35px 0;
+      }
+    }
+    img {
+      width: 100%;
+      @include desktop {
+        width: 1200px;
+      }
+    }
+  }
+
+  .arrow {
+    font-size: 50px;
+    font-weight: bold;
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    cursor: pointer;
+    svg {
+      color: #ffffff7a;
+      opacity: 0.2;
+    }
+    &:hover {
+      svg {
+        color: #ffffffc9;
+        opacity: 0.5;
+      }
+    }
+  }
+  .arrow-left {
+    justify-content: flex-end;
+    float: left;
+    &:hover {
+      background: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0),
+        rgb(255, 255, 255, 0.1)
+      );
+    }
+  }
+
+  .arrow-right {
+    top: 0;
+    right: 0;
+    justify-content: flex-start;
+    &:hover {
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0),
+        rgb(255, 255, 255, 0.1)
+      );
+    }
+  }
+}

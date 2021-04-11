@@ -1,0 +1,53 @@
+@import '../../../../scss/variables';
+
+$desktop: 840px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+.navigationItem {
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover,
+  &:active,
+  &select {
+    background-color: #000;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  @include desktop {
+    grid-template-columns: 30% 70%;
+    height: auto;
+    &:hover,
+    &:active,
+    &select {
+      color: #fff;
+      a {
+        text-decoration: none;
+        color: #ccc;
+      }
+    }
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+    width: auto;
+    height: 100%;
+    padding: 2% 5%;
+    border-bottom: solid transparent;
+    box-sizing: border-box;
+    display: block;
+  }
+}

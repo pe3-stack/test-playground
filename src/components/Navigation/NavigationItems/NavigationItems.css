@@ -1,0 +1,33 @@
+.NavigationItems {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  margin-top: 12%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.NavigationItems ul {
+  display: none;
+}
+
+.login_status {
+  height: 10px;
+  width: 10px;
+  margin: -2px 10px;
+  background-color: #19da00;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.logout_status {
+  height: 10px;
+  width: 10px;
+  margin: -2px 10px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+/*# sourceMappingURL=NavigationItems.css.map */

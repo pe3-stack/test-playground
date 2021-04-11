@@ -1,0 +1,71 @@
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .Input {
+    width: 100%;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .Label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .InputElement {
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    font: inherit;
+    padding: 6px 10px;
+    width: 100%;
+  }
+  .InputElement:hover {
+    outline: none;
+    background-color: #f8f8f8;
+  }
+  .Invalid {
+    border: 1px solid #d30101;
+  }
+  .validationError {
+    color: #d30101;
+  }
+}
+
+.Input {
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.InputElement {
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: white;
+  font: inherit;
+  padding: 6px 10px;
+  width: 100%;
+}
+
+.InputElement:hover {
+  outline: none;
+  background-color: #f8f8f8;
+}
+
+.Invalid {
+  border: 1px solid #d30101;
+}
+
+.validationError {
+  color: #d30101;
+  padding: 6px 10px;
+}
+/*# sourceMappingURL=Input.css.map */

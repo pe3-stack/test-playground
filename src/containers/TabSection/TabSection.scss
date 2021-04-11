@@ -1,0 +1,13 @@
+@import "../../scss/variables";
+
+$desktop: 840px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+.sixth-section {
+  
+}   

@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss'
 
-function App() {
+//components
+import Header from './containers/Header/Header';
+import CardSection from './containers/CardSection/CardSection';
+import WeAre from './containers/WeAre/WeAre';
+import WeDo from './containers/WeDo/WeDo';
+import Careers from './containers/Careers/Careers';
+import TabSection from './containers/TabSection/TabSection';
+import ContactUs from './containers/ContactUs/ContactUs';
+import CookieSection from './containers/CookieSection/CookieSection';
+import Footer from './components/Footer/Footer';
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Header />
+      <CardSection />
+      <WeAre />
+      <WeDo />
+      <Careers />
+      <TabSection />
+      <ContactUs />
+      <CookieSection />
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

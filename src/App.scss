@@ -1,0 +1,15 @@
+@import "scss/variables";
+html {
+    display: flex !important;
+    justify-content: center;
+    letter-spacing: 0.5px;
+}
+.App {
+  text-align: center;
+  font-family: $main-font;
+}
+
+body {
+  margin: 0px;
+  width: fit-content;
+}

@@ -1,0 +1,19 @@
+$linkColor: white;
+$main-font: "Gotham", Helvetica, sans-serif;
+$borders: 15px;
+$padding: 15px;
+$background: #340080;
+$fa-font-path: "../webfonts" !default;
+
+$colors: (
+  mobile-toolbar: #fff,
+  secondary: #1d005a,
+  textOnBlack: #fff,
+  primary-dark: darken(#005ddf, 40%),
+  accent: #fff6bb,
+  accentHover: rgb(220, 210, 147),
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}

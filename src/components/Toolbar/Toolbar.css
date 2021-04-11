@@ -1,0 +1,49 @@
+/* For Devices: */
+.Toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1d005a;
+  height: 60px;
+  z-index: 10;
+}
+
+.Nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem;
+}
+
+.toolbar_navigationItems {
+  display: none;
+}
+
+.toolbar_navigationItems ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 30px;
+  padding: 0;
+}
+
+.toolbar_navigationItems li {
+  padding: 0 0 0 0rem;
+}
+
+.toolbar_navigationItems a {
+  color: white;
+  text-decoration: none;
+}
+
+.toolbar_navigationItems a:hover,
+.toolbar_navigationItems a:active {
+  color: orangered;
+}
+/*# sourceMappingURL=Toolbar.css.map */

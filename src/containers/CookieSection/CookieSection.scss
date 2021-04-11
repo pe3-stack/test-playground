@@ -1,0 +1,63 @@
+@import '../../scss/variables';
+
+$desktop: 840px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+.cookie-section {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: 'cookieParagraph cookieButton';
+  grid-gap: 20px;
+  padding: 0px 30px;
+  height: 100px;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  z-index: 20;
+  @include desktop {
+    width: 100%;
+    height: 50px;
+  }
+  .cookie-paragraph-container {
+    grid-area: cookieParagraph;
+    color: #000;
+    font-size: 12px;
+    display: flex;
+    height: 100%;
+    p {
+      width: 100%;
+      text-align: right;
+      align-self: center;
+    }
+  }
+  .cookie-button-container {
+    grid-area: cookieButton;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    .cookie-button {
+      background-color: #000;
+      font-size: 14px;
+      border: 1px solid grey;
+      padding: 9px;
+      text-align: center;
+      width: 90px;
+      cursor: pointer;
+      @include desktop {
+      }
+      &:hover {
+        background-color: #fff;
+        color: #000;
+        border: 1px solid;
+        padding: 9px;
+        text-align: center;
+      }
+    }
+  }
+}

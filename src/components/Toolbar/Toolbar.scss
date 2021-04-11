@@ -1,0 +1,136 @@
+$desktop: 840px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+/* For Devices: */
+.toolbar {
+  top: 0;
+  position: fixed;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  height: 60px;
+  z-index: 5;
+  .nav-toolbar {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 'Logo DrawerToggleButton';
+    z-index: 6;
+    .nav-logo {
+      display: flex;
+      justify-content: center;
+    }
+    @include desktop {
+      grid-template-columns: auto auto auto;
+      grid-template-areas: 'Logo DrawerToggleButton NavigationItems';
+    }
+    img {
+      grid-area: Logo;
+      position: relative;
+      float: left;
+      width: auto;
+      height: auto;
+      padding: 20px 0px;
+      @include desktop {
+        padding: 20px 150px;
+      }
+    }
+    .logo-white {
+      display: none;
+      @include desktop {
+        display: block;
+      }
+    }
+    .logo-black {
+      @include desktop {
+        display: none;
+      }
+    }
+  }
+}
+
+.nav-navigation-items {
+  display: none;
+  @include desktop {
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+    display: flex;
+    grid-area: NavigationItems;
+    justify-content: center;
+    padding: 14px;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.nav-navigation-items ul {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  padding: 0;
+}
+.nav-navigation-items li {
+  padding: 0 0 0 0rem;
+  @include desktop {
+    float: right;
+  }
+}
+
+.nav-navigation-items a {
+  color: red;
+  text-decoration: none;
+  @include desktop {
+    color: #fff;
+    width: 100px;
+  }
+  &:hover,
+  &:active {
+    cursor: pointer;
+  }
+}
+
+/**/
+.nav-navigation-items-footer {
+  display: flex;
+  grid-area: NavigationItems;
+  justify-content: center;
+  padding: 50px 0;
+  align-items: center;
+  @include desktop {
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+.nav-navigation-items-footer ul {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  padding: 0;
+}
+.nav-navigation-items-footer li {
+  padding: 0 0 20px 0rem;
+  @include desktop {
+    float: right;
+  }
+}
+
+.nav-navigation-items-footer a {
+  color: #ccc;
+  text-decoration: none;
+  @include desktop {
+    color: #fff;
+    width: 100px;
+  }
+  &:hover,
+  &:active {
+    cursor: pointer;
+  }
+}

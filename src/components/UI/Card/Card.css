@@ -1,0 +1,10 @@
+.card {
+  background: #fff;
+  padding: 5%;
+  margin: 2em auto;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 80%;
+}
+/*# sourceMappingURL=Card.css.map */

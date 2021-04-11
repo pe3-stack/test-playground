@@ -1,0 +1,8 @@
+.remove {
+  cursor: pointer;
+  fill: rgb(211, 1, 1);
+}
+
+.remove:hover svg {
+  fill: rgba(145, 0, 0, 0.5);
+}

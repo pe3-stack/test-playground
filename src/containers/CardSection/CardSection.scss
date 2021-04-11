@@ -1,0 +1,22 @@
+@import '../../scss/variables';
+
+$desktop: 840px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+.card-section {
+  display: grid;
+  grid-template-columns: none;
+  grid-template-rows: repeat(3, 1fr);
+  @include desktop {
+    grid-template-rows: none;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  grid-gap: 50px;
+  padding: 50px 50px;
+  justify-items: center;
+}

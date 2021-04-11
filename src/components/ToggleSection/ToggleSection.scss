@@ -1,0 +1,62 @@
+@import '../../scss/variables';
+
+$desktop: 840px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+.items-container {
+  background-color: #e5e5e5;
+  padding: 50px;
+  height: 100%;
+  @include desktop {
+    height: 500px;
+  }
+}
+
+.items {
+  margin: 10px;
+  @include desktop {
+    display: grid;
+    grid-template-areas: 'titlesItems contentItems';
+    grid-template-columns: auto 70%;
+    grid-template-rows: 65px;
+    margin: 0;
+  }
+}
+
+.items-title {
+  grid-area: titlesItems;
+  display: flex;
+  justify-content: center;
+  background-color: #ccc;
+  @include desktop {
+    width: auto;
+    margin: 2px 0;
+  }
+
+  cursor: pointer;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  h1 {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.items-content {
+  grid-area: contentItems;
+  background-color: #fff;
+  height: 100%;
+  padding: 50px 30px;
+  text-align: left;
+  @include desktop {
+    height: 300px;
+  }
+}

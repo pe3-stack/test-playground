@@ -1,0 +1,14 @@
+@import '../../scss/variables';
+
+$desktop: 840px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+.header-section {
+  display: grid;
+  grid-template-columns: auto;
+}

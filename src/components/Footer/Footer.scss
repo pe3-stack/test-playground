@@ -1,0 +1,67 @@
+@import '../../scss/variables';
+
+$desktop: 840px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+.footer {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #000;
+  border-top: 1px solid #494949;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 'logo navigation social';
+  .logo-footer {
+    img {
+      width: 150px;
+    }
+  }
+  .nav-navigation-items-footer {
+    display: flex;
+    grid-area: NavigationItems;
+    justify-content: center;
+    padding: 50px 0;
+    align-items: center;
+    @include desktop {
+      nav {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  .nav-navigation-items-footer ul {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 0;
+  }
+  .nav-navigation-items-footer li {
+    padding: 0 0 20px 0rem;
+    @include desktop {
+      float: right;
+    }
+  }
+
+  .nav-navigation-items-footer a {
+    color: #ccc;
+    text-decoration: none;
+    @include desktop {
+      color: #fff;
+      width: 100px;
+    }
+    &:hover,
+    &:active {
+      cursor: pointer;
+    }
+  }
+  .social-icons {
+    a {
+      margin: 10px;
+      width: 100px;
+    }
+  }
+}
