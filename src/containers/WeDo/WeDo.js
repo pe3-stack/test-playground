@@ -7,7 +7,7 @@ import banner_we_do from "../../assets/banner-we-do.jpg";
 
 function WeDo(props) {
     return (
-        <div className="we-do">
+        <div className="we-do" id='wedo'>
             <div className="banner-we-do" style={{ backgroundImage: `url(${banner_we_do})` }}></div>
             <div className="banner-we-do-desc">
                 <div className="desc-we-do">

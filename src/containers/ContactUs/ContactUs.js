@@ -4,11 +4,7 @@ import Input from '../../components/UI/Input/Input';
 
 import "./ContactUs.scss";
 
-
-
-function ContactUs(props) {
-
-
+function ContactUs() {
     const controls = {
         name: {
             label: "",
@@ -58,9 +54,10 @@ function ContactUs(props) {
         hidden: {},
         message: {
             label: "",
-            elementType: "textarea",
+            elementType: "message",
             elementConfig: {
-                type: "textarea"
+                type: "text",
+                placeholder: "message"
             },
             value: "",
             validation: {
@@ -147,8 +144,11 @@ function ContactUs(props) {
         </div>
     ))
 
+
+
+
     return (
-        <div className="contact-us">
+        <div className="contact-us" id='contactus'>
             <div className="desc-contact-us-container">
                 <div className="desc-contact-us">
                     <h1>contact us.</h1>

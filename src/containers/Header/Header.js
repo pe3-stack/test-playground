@@ -1,5 +1,4 @@
 import React, { useState, useCallback } from "react";
-import '../../fontawesome/web-fonts-with-css/scss/fontawesome.scss';
 
 /* CSS */
 import "./Header.scss";

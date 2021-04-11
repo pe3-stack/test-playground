@@ -16,6 +16,7 @@ const Toolbar = ({ onToggleClick, clicked }) => {
   const [width, setWidth] = useState(window.innerWidth);
 
 
+
   const handleWindowSizeChange = () => {
     setWidth(window.innerWidth);
 
@@ -33,6 +34,7 @@ const Toolbar = ({ onToggleClick, clicked }) => {
     }
     setPrevScrollPos(currentScrollPos);
   };
+
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);

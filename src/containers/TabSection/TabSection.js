@@ -2,11 +2,9 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./TabSection.scss";
 
-import banner_careers from "../../assets/banner-carrers.jpg";
-
 import ToggleSection from '../../components/ToggleSection/ToggleSection';
 
-function TabSection(props) {
+function TabSection() {
 
     const [items, setItems] = useState([]);
 

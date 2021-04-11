@@ -1,4 +1,4 @@
-@import "../../../scss/variables";
+@import '../../../scss/variables';
 
 $desktop: 840px;
 
@@ -8,7 +8,7 @@ $desktop: 840px;
   }
 }
 
-.toggle_button {
+.toggle-button {
   display: flex;
   width: 100%;
   height: 30px;
@@ -26,18 +26,16 @@ $desktop: 840px;
   }
 }
 
-.toggle_button:focus {
+.toggle-button:focus {
   outline: none;
 }
 
-.toggle_button__line {
+.toggle-button__line {
   width: 30px;
   height: 5px;
   margin-bottom: 5px;
   background-color: #000;
-  
 }
-.toggle_button:hover > .toggle_button__line {
+.toggle-button:hover > .toggle-button__line {
   background-color: #7f7f7f;
 }
-

@@ -1,8 +1,17 @@
-@import "scss/variables";
+@import './scss//variables';
+
+$desktop: 840px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
 html {
-    display: flex !important;
-    justify-content: center;
-    letter-spacing: 0.5px;
+  display: flex !important;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  scroll-behavior: smooth;
 }
 .App {
   text-align: center;
