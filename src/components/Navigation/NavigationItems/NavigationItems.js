@@ -9,10 +9,10 @@ const navigationItems = ({ clicked }) => {
   return (
     <ul className='navigationItems'>
       <div>
-        <NavigationItem clicked={clicked} link='playground-test//#weare'>contact us</NavigationItem>
-        <NavigationItem clicked={clicked} link='playground-test//#careers'>careers</NavigationItem>
-        <NavigationItem clicked={clicked} link='playground-test//#contactus'>we are</NavigationItem>
-        <NavigationItem clicked={clicked} link='playground-test//#wedo'>we do</NavigationItem>
+        <NavigationItem clicked={clicked} link='/playground-test/#weare'>contact us</NavigationItem>
+        <NavigationItem clicked={clicked} link='/playground-test/#careers'>careers</NavigationItem>
+        <NavigationItem clicked={clicked} link='/playground-test/#contactus'>we are</NavigationItem>
+        <NavigationItem clicked={clicked} link='/playground-test/#wedo'>we do</NavigationItem>
       </div>
     </ul>
   );
