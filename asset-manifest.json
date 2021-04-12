@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/test-playground/static/css/main.7f8382f1.chunk.css",
-    "main.js": "/test-playground/static/js/main.fc456ffd.chunk.js",
-    "main.js.map": "/test-playground/static/js/main.fc456ffd.chunk.js.map",
-    "runtime-main.js": "/test-playground/static/js/runtime-main.7b30f68a.js",
-    "runtime-main.js.map": "/test-playground/static/js/runtime-main.7b30f68a.js.map",
-    "static/js/2.0bec6765.chunk.js": "/test-playground/static/js/2.0bec6765.chunk.js",
-    "static/js/2.0bec6765.chunk.js.map": "/test-playground/static/js/2.0bec6765.chunk.js.map",
-    "static/js/3.81bb4370.chunk.js": "/test-playground/static/js/3.81bb4370.chunk.js",
-    "static/js/3.81bb4370.chunk.js.map": "/test-playground/static/js/3.81bb4370.chunk.js.map",
+    "main.css": "/test-playground/static/css/main.e4e7442a.chunk.css",
+    "main.js": "/test-playground/static/js/main.a64a16de.chunk.js",
+    "main.js.map": "/test-playground/static/js/main.a64a16de.chunk.js.map",
+    "runtime-main.js": "/test-playground/static/js/runtime-main.0a2cd6b6.js",
+    "runtime-main.js.map": "/test-playground/static/js/runtime-main.0a2cd6b6.js.map",
+    "static/js/2.631e01ce.chunk.js": "/test-playground/static/js/2.631e01ce.chunk.js",
+    "static/js/2.631e01ce.chunk.js.map": "/test-playground/static/js/2.631e01ce.chunk.js.map",
+    "static/js/3.041605c8.chunk.js": "/test-playground/static/js/3.041605c8.chunk.js",
+    "static/js/3.041605c8.chunk.js.map": "/test-playground/static/js/3.041605c8.chunk.js.map",
     "index.html": "/test-playground/index.html",
-    "static/css/main.7f8382f1.chunk.css.map": "/test-playground/static/css/main.7f8382f1.chunk.css.map",
-    "static/js/2.0bec6765.chunk.js.LICENSE.txt": "/test-playground/static/js/2.0bec6765.chunk.js.LICENSE.txt",
+    "static/css/main.e4e7442a.chunk.css.map": "/test-playground/static/css/main.e4e7442a.chunk.css.map",
+    "static/js/2.631e01ce.chunk.js.LICENSE.txt": "/test-playground/static/js/2.631e01ce.chunk.js.LICENSE.txt",
     "static/media/banner-carrers.0fea0e9b.jpg": "/test-playground/static/media/banner-carrers.0fea0e9b.jpg",
     "static/media/banner-we-are.1cee4ba5.jpg": "/test-playground/static/media/banner-we-are.1cee4ba5.jpg",
     "static/media/banner-we-do.7989ec37.jpg": "/test-playground/static/media/banner-we-do.7989ec37.jpg",
@@ -24,9 +24,9 @@
     "static/media/slide-play.163371bf.jpg": "/test-playground/static/media/slide-play.163371bf.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7b30f68a.js",
-    "static/js/2.0bec6765.chunk.js",
-    "static/css/main.7f8382f1.chunk.css",
-    "static/js/main.fc456ffd.chunk.js"
+    "static/js/runtime-main.0a2cd6b6.js",
+    "static/js/2.631e01ce.chunk.js",
+    "static/css/main.e4e7442a.chunk.css",
+    "static/js/main.a64a16de.chunk.js"
   ]
 }
